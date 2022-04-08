@@ -91,6 +91,8 @@ public class GT4500 implements SpaceShip {
         firingSuccess = true;
 
         break;
+
+        //szerkesztettem egy adott fájl sorát
     }
 
     return firingSuccess;
