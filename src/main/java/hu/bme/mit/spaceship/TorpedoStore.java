@@ -55,8 +55,7 @@ public class TorpedoStore {
   }
 
   private Random extracted() {
-    Random generator = new Random();
-    return generator;
+    return new Random();
   }
 
   public boolean isEmpty(){
