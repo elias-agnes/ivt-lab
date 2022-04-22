@@ -14,6 +14,8 @@ public class TorpedoStore {
 
   private int torpedoCount = 0;
 
+  private int var;
+
   public TorpedoStore(int numberOfTorpedos){
     this.torpedoCount = numberOfTorpedos;
 
@@ -41,7 +43,8 @@ public class TorpedoStore {
 
     if (r >= FAILURE_RATE) {
       // successful firing
-      this.torpedoCount =- numberOfTorpedos;
+      var = - numberOfTorpedos;
+      this.torpedoCount =var;
       success = true;
     } else {
       // simulated failure
